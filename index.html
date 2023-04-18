@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лабораторна робота №2</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <img id="image" src="images/1.jpg" alt="Зображення" />
+    <ul>
+      <li onclick="changeImage('images/1.jpg')">Зображення 1</li>
+      <li onclick="changeImage('images/2.jpg')">Зображення 2</li>
+      <li onclick="changeImage('images/3.jpg')">Зображення 3</li>
+      <li onclick="changeImage('images/4.jpg')">Зображення 4</li>
+      <li onclick="changeImage('images/5.jpg')">Зображення 5</li>
+      <li onclick="changeImage('images/6.jpg')">Зображення 6</li>
+      <li onclick="changeImage('images/7.jpg')">Зображення 7</li>
+      <li onclick="changeImage('images/8.jpg')">Зображення 8</li>
+      <li onclick="changeImage('images/9.jpg')">Зображення 9</li>
+    </ul>
+    <form>
+      <label for="width">Ширина:</label>
+      <input
+        type="text"
+        id="width"
+        onchange="updateImage()"
+        value="200"
+      /><br /><br />
+      <label for="height">Висота:</label>
+      <input
+        type="text"
+        id="height"
+        onchange="updateImage()"
+        value="200"
+      /><br /><br />
+      <label for="border">Товщина рамки:</label>
+      <input
+        type="text"
+        id="border"
+        onchange="updateImage()"
+        value="0"
+      /><br /><br />
+      <label for="alt">Альтернативний текст:</label>
+      <input type="text" id="alt" onchange="updateImage()" /><br /><br />
+    </form>
+  </body>
+</html>
